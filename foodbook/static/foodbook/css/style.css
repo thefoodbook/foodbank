@@ -7,42 +7,15 @@ div.main-content{
 	margin-right:auto
 }
 
-div.search{
-	display: inline-block;
-	text-align: center;
-	width:100%;
-	margin-left:auto;
-	margin-right:auto;
-	vertical-align:middle;
-}
-input.search_input{
-	border-style: solid;
-
-}
-input.textfield{
-	width:80%;
-}
-input.button{
-	width:15%;
-}
-/*div.photo-slides{
-	width:60%;
-	height:70%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
 div.images{
 	width:100%;
 	height:100%;
-	background-size: no-repeat;
-	background-repeat: 'false';
+	margin:auto;
+	background-size: auto;
+	background-repeat:no-repeat;
 	background-position: 50% 50%;
 }
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-.search { position: relative; }
-.search input { text-indent: 30px;}
 .search .fa-search { 
   position: absolute;
   top: 24px;

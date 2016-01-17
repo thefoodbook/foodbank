@@ -7,6 +7,10 @@ def index(request):
 	context = ''
 	return render(request, 'foodbook/index.html')
 
+def commentbox(request):
+	context = ''
+	return render(request, 'foodbook/commentbox.html')
+
 
 #def detail(request, question_id):
 #    return HttpResponse("You're looking at question %s." % question_id)
