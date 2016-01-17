@@ -21,21 +21,6 @@
     height: 17.5%;
 }
 
-.nearby .place.two .meta,
-.nearby .place.three .meta {
-    height: 28px;
-    line-height: 15px;
-    font-size: 10px;
-    padding: 5px;
-}
-
-.nearby .place.one .meta {
-    height: 34px;
-    line-height: 19px;
-    font-size: 13px;
-    padding: 7px;
-}
-
 .nearby .place.four {
     width: 100%;
 }
@@ -55,4 +40,43 @@
     white-space: nowrap;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    padding-right: 80px;
+}
+
+.nearby .place.two .meta,
+.nearby .place.three .meta {
+    height: 28px;
+    line-height: 15px;
+    font-size: 10px;
+    padding: 5px;
+    padding-right: 50px;
+}
+
+.nearby .place.one .meta {
+    height: 34px;
+    line-height: 19px;
+    font-size: 13px;
+    padding: 7px;
+    padding-right: 60px;
+}
+
+.nearby .place .meta .price {
+    position: absolute;
+    right: 10px;
+    left: auto;
+    top: 10px;
+}
+
+.nearby .place.one .meta .price {
+    top: 7px;
+
+}
+
+.nearby .place.two .meta .price,
+.nearby .place.three .meta .price {
+    top: 5px;
+}
+
+.nearby .place.four .meta .price {
+
 }
