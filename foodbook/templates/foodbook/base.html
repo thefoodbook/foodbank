@@ -1,8 +1,9 @@
 {% load staticfiles %}
 <head>
-<title>Foodbook</title>
+<title>The Foodbook</title>
 
   <link rel="stylesheet" type="text/css" href="{% static 'common/lib/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'common/lib/fontawesome/css/font-awesome.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'common/css/style.css' %}">
 
   {% block pageCSS %}
@@ -19,6 +20,10 @@
 <body>
 <div id="container">
   {% include 'foodbook/header.html' %}
+  <div class="search">
+    <span class="fa fa-search"></span>
+    <input type="search" placeholder="Search"/>
+  </div>
 
   {% block content %}{% endblock %}
 </div>
