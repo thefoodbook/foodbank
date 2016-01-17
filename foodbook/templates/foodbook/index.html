@@ -22,14 +22,19 @@
 	<input class='search_input textfield' type="text"/>
 	<input class='search_input button' type='submit'/>
 	</form>
-	<div id="owl-example" class="owl-carousel">
-		  <img src="http://www.ethanstowellrestaurants.com/site/assets/files/1234/gallery-barcotto-5.960x0.jpg">
-		  <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/1235/lao7372.960x0.jpg ">
-		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/2073/lao7500.960x0.jpg">
-		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/2942/lao5747.960x0.jpg">
-		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/1237/lao5029.960x0.jpg">
-		   
 
+	<div class="search">
+  		<span class="fa fa-search"></span>
+  		<input placeholder="">
+	</div>
+	<div id="owl-example" class="owl-carousel">
+		  <div class="images" style="background-image: url('http://www.ethanstowellrestaurants.com/site/assets/files/1234/gallery-barcotto-5.960x0.jpg')"></div>
+
+		  <div class="images" style="background-image: url('http://www.ethanstowellrestaurants.com/site/assets/files/1235/lao7372.960x0.jpg')"></div>
+
+		 	<div class="images" style="background-image:url('http://www.ethanstowellrestaurants.com/site/assets/files/2073/lao7500.960x0.jpg')"></div>
+
+		   <div class="images" style="background-image:url('http://www.ethanstowellrestaurants.com/site/assets/files/2942/lao5747.960x0.jpg')"></div>
 	</div>
 
  </div>
@@ -39,8 +44,8 @@ $(document).ready(function() {
   $("#owl-example").owlCarousel({
   	singleItem:true,
   	autoHeight:true,
-  	transition:'fade'
-
+  	transition:'fade',
+  	pagination: false
   });
  
 });
