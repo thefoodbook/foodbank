@@ -7,9 +7,9 @@ def index(request):
 	context = ''
 	return render(request, 'foodbook/index.html')
 
-def commentbox(request):
+def index_temp(request):
 	context = ''
-	return render(request, 'foodbook/commentbox.html')
+	return render(request, 'foodbook/index_1.html')
 
 
 #def detail(request, question_id):

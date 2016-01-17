@@ -21,7 +21,7 @@ urlpatterns = [
     #url(r'^$', views.index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.index, name='index'),
-    url(r'^commentbox$', views.commentbox, name='index'),
+    url(r'^indexTemp$', views.index_temp, name='index'),
 
     url(r'^restaurant/(?P<id>.*)$', views.restaurant, name='restaurant'),
     url(r'^user/(?P<id>.*)$', views.user, name='user'),

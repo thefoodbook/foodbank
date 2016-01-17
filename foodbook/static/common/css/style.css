@@ -1,5 +1,6 @@
 body {
     padding-top: 49px;
+    background-color:grey;
 }
 
 #container {
@@ -10,7 +11,7 @@ body {
 }
 
 #container .search {
-    height: 50px;
+    height: 70px;
     padding: 10px;
     background-color: lightgray;
     display: block;
@@ -24,6 +25,7 @@ body {
     border-radius: 5px;
     height: 30px;
     width: 97%;
+    height:100%;
     margin-left: 6px;
     text-indent: 40px;
     text-align: left;
