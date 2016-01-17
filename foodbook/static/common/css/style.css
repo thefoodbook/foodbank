@@ -4,10 +4,16 @@ body {
 }
 
 #container {
+    padding: 0;
+    margin: 0;
 }
 
-#container > nav {
+#container .navbar-header {
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: #FF560A;
+    height: 50px;
+    border-bottom: 0 solid transparent;
 }
 
 #container .search {
@@ -53,8 +59,13 @@ body {
     left: 0;
 }
 
-#container .navbar-default .navbar-brand:hover {
+#container .navbar-default .navbar-brand:hover,
+#container .navbar-default .navbar-brand:active {
     color: white;
+}
+
+#navbar {
+    background-color: white;
 }
 
 #container .search input:placeholder-shown {
@@ -71,27 +82,80 @@ body {
 }
 
 .navbar-default button,
-.navbar-default button:hover {
+.navbar-default button:hover,
+.navbar-default button:active {
 }
 
 .navbar-default button.left,
-.navbar-default button.left:hover {
+.navbar-default button.left:hover,
+.navbar-default button.left:active {
     float: left;
     margin-left: 10px;
     top: 2px;
 }
 
 .navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
     border: 0 solid transparent;
     background-color: transparent;
 }
 
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
     color: #DD560A;
 }
 
 .navbar button i {
     font-size: 34px;
     line-height: 13px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #323232;
+}
+
+.footer div {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer span {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer span:nth-child(2) {
+    border-left: 1px solid rgba(127, 127, 127, 0.5);
+    border-right: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+.footer span i {
+    font-size: 38px;
+    line-height: 65px;
+    height: 70px;
+    color: white;
+}
+
+.footer span i.fa-home {
+    font-size: 42px;
+}
+
+.footer span i.fa:hover {
+    color: #DD560A;
+}
+.footer span i.fa.active {
+    color: #ff560a;
+}
+
+.footer span i.fa-camera {
+    font-size: 35px;
+    top: 2px;
 }
