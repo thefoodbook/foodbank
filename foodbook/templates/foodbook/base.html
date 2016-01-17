@@ -1,19 +1,15 @@
 {% load staticfiles %}
 <head>
 <title> Sample Django Application	</title>
-<link rel="stylesheet" type="text/css" href="{% static "foodbook/css/style.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/style.css' %}">
 <!-- Important Owl stylesheet -->
-<link rel="stylesheet" href="{% static "foodbook/lib/owl-carousel/owl.carousel.css" %}">
-<!-- Default Theme -->
-<link rel="stylesheet" href="{% static "foodbook/lib/owl-carousel/owl.theme.css" %}">
- 
+
+  {% block pagehead %}
+  {% endblock %}
+
 <!--  jQuery 1.7+  -->
 <!--script src="jquery-1.9.1.min.js"></script-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- 
-<!-- Include js plugin -->
-<script src="{% static "foodbook/lib/owl-carousel/owl.carousel.js" %}"></script>
-
 </head>
 
 <body>
