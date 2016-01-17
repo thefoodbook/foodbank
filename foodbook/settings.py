@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4f@wz0yr_pvi39tkmvh)kl%p8fu04yi@9da@s+%uym@9^x_(a0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DJANGO_RUNTIME_TYPE = os.environ.get('DJANGO_RUNTIME_TYPE', '')
+DEBUG = not DJANGO_RUNTIME_TYPE == 'PRODUCTION'
 
 ALLOWED_HOSTS = []
 
@@ -78,7 +79,8 @@ WSGI_APPLICATION = 'foodbook.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-if DEBUG:
+REAL_DB = os.environ.get('REAL_DB', False)
+if not REAL_DB:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
