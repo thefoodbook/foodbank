@@ -57,6 +57,7 @@ body {
 
 #container .search input:placeholder-shown {
     text-align: center;
+    text-indent: 0px;
 }
 
 .navbar-default .navbar-brand,
