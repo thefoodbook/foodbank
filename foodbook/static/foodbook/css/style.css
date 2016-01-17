@@ -141,9 +141,12 @@
 
 .buddy .restaurant .dish {
 	padding-top: 8px;
-	height: 14px;
+	height: 28px;
 	font-size: 14px;
 	color: #DDDDDD;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .buddy .restaurant .bookmark {
