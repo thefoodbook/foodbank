@@ -25,6 +25,7 @@ urlpatterns = [
 
     url(r'^restaurant/(?P<id>.*)$', views.restaurant, name='restaurant'),
     url(r'^user/(?P<id>.*)$', views.user, name='user'),
+    url(r'^events/(?P<id>.*)$', views.events, name='events'),
     #url(r'^image/(?P<id>.*)$', views.image, name='image')
 ]
 

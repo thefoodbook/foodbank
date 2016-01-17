@@ -1,0 +1,23 @@
+{% extends 'foodbook/base.html' %}
+{% load staticfiles %}
+
+{% block pageCSS%}
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="{% static 'foodbook/lib/owl-carousel/owl.carousel.css' %}">
+<!-- Default Theme -->
+<link rel="stylesheet" href="{% static 'foodbook/lib/owl-carousel/owl.theme.css' %}"
+			>
+<link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/style.css' %}">
+{% endblock %}
+
+{% block pageJS %}
+<!-- Include js plugin -->
+<script src="{% static 'foodbook/lib/owl-carousel/owl.carousel.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<a href="/events">
+<img style="width: 100%" src="{% static 'foodbook/img/restaurant_profile.png' %}" />
+</a>
+{% endblock %}
