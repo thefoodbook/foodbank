@@ -1,1 +1,15 @@
-{% include 'foodbook/base.html' %}
+{% extends 'foodbook/base.html' %}
+ 
+ {% block content %}
+<div class='main-content' action=''>
+	<form class='search-bar'>
+	<input class='search_input textfield' type="text"/>
+	<input class='search_input button' type='submit'/>
+	</form>
+	<div class='photo-slides'>
+	stuff 
+	</div>
+
+ </div>
+
+ {% endblock %}
