@@ -38,13 +38,13 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+	background-size: cover !important;
 }
 
 .buddy {
 	display: none;
 	background: #fff;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 	color: #fff;
 	padding: 20px;
 	width: 360px;
@@ -141,9 +141,12 @@
 
 .buddy .restaurant .dish {
 	padding-top: 8px;
-	height: 14px;
+	height: 28px;
 	font-size: 14px;
 	color: #DDDDDD;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .buddy .restaurant .bookmark {
