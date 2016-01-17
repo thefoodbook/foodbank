@@ -8,23 +8,37 @@
     background-position: 50% 50%;
     background-color: transparent;
     overflow: hidden;
-    /* float: left; */
+    float: left;
     border: 1px solid white;
 }
-/*
 .nearby .place.one {
     width: 65%;
 }
 
 .nearby .place.two,
-.nearby .place.three,{
-    width: 65%;
+.nearby .place.three {
+    width: 35%;
+    height: 17.5%;
+}
+
+.nearby .place.two .meta,
+.nearby .place.three .meta {
+    height: 28px;
+    line-height: 15px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.nearby .place.one .meta {
+    height: 34px;
+    line-height: 19px;
+    font-size: 13px;
+    padding: 7px;
 }
 
 .nearby .place.four {
     width: 100%;
 }
-*/
 .nearby .place .meta {
     position: absolute;
     display: block;

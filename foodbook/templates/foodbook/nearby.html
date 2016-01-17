@@ -18,7 +18,7 @@
         <!-- {% cycle 'one' 'two' 'three' 'four' as c %} -->
         <div class="place {{ c }}" style="background-image: url('{{ activity.largeImageURL }}')">
             <!-- {{ activity }} -->
-            <div class="meta">{{ activity.title }}</div>
+            <div class="meta">{{ activity.title }} ({{ activity.fromPrice }}+)</div>
         </div>
     {% endfor %}
 </div>
