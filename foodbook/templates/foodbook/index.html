@@ -1,14 +1,17 @@
 {% extends 'foodbook/base.html' %}
 {% load staticfiles %}
 
-{% block pagehead %}
+{% block pageCSS%}
 <link rel="stylesheet" href="{% static 'foodbook/lib/owl-carousel/owl.carousel.css' %}">
 <!-- Default Theme -->
 <link rel="stylesheet" href="{% static 'foodbook/lib/owl-carousel/owl.theme.css' %}">
+{% endblock %}
 
+{% block pageJS %}
 <!-- Include js plugin -->
 <script src="{% static 'foodbook/lib/owl-carousel/owl.carousel.js' %}"></script>
 {% endblock %}
+
 
 {% block content %}
 <div class='main-content' action=''>
@@ -16,10 +19,23 @@
 	<input class='search_input textfield' type="text"/>
 	<input class='search_input button' type='submit'/>
 	</form>
-	<div class='photo-slides'>
-	stuff 
+	<div id="owl-example" class="owl-carousel">
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
 	</div>
 
  </div>
+ <script type="text/javascript">
+$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel();
+ 
+});
+ </script>
 
  {% endblock %}
