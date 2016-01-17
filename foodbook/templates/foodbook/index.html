@@ -23,20 +23,25 @@
 	<input class='search_input button' type='submit'/>
 	</form>
 	<div id="owl-example" class="owl-carousel">
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
+		  <img src="http://www.ethanstowellrestaurants.com/site/assets/files/1234/gallery-barcotto-5.960x0.jpg">
+		  <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/1235/lao7372.960x0.jpg ">
+		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/2073/lao7500.960x0.jpg">
+		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/2942/lao5747.960x0.jpg">
+		   <img src=" http://www.ethanstowellrestaurants.com/site/assets/files/1237/lao5029.960x0.jpg">
+		   
+
 	</div>
 
  </div>
  <script type="text/javascript">
 $(document).ready(function() {
  
-  $("#owl-example").owlCarousel();
+  $("#owl-example").owlCarousel({
+  	singleItem:true,
+  	autoHeight:true,
+  	transition:'fade'
+
+  });
  
 });
  </script>
