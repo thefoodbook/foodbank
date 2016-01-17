@@ -1,9 +1,12 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/foodbook/{{ question.id }}/">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+{% load staticfiles %}
+<head>
+<title> Sample Django Application	</title>
+<link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+</head>
+
+<body>
+<div id="container">
+<h1> Congratulation </h1>
+<h2> You successfully deployed a Django app with Distelli</h2>
+</div>
+</body>
