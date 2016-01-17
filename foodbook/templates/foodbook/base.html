@@ -2,14 +2,15 @@
 <head>
 <title>Foodbook</title>
 
-  <link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/style.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'common/lib/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'common/css/style.css' %}">
 
   {% block pageCSS %}
   {% endblock %}
   <!--  jQuery 1.7+  -->
 	<!--script src="jquery-1.9.1.min.js"></script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="{% static 'common/lib/bootstrap/js/bootstrap.min.js' %}"></script>
   {% block pageJS %}
   {% endblock %}
 
@@ -17,8 +18,8 @@
 
 <body>
 <div id="container">
-<h1> Congratulation </h1>
-<h2> You successfully deployed a Django app with Distelli</h2>
-{% block content %}{% endblock %}
+  {% include 'foodbook/header.html' %}
+
+  {% block content %}{% endblock %}
 </div>
 </body>

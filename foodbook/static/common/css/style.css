@@ -1,0 +1,16 @@
+body {
+    padding-top: 100px;
+}
+
+#container {
+}
+
+#container > nav {
+    background-color: orange;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-toggle {
+    color: white;
+    font-weight: bold;
+}
