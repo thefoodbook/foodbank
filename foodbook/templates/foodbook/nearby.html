@@ -3,6 +3,7 @@
 
 {% block pageCSS%}
 <link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/nearby.css' %}">
 {% endblock %}
 
 {% block pageJS %}
@@ -12,13 +13,13 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
+<div class="nearby">
     {% for activity in nearby.activities %}
-    {{ activity }}
-    <br />
-    {{ activity.title }}
-    <br />
-    <br />
+        <!-- {% cycle 'one' 'two' 'three' 'four' as c %} -->
+        <div class="place {{ c }}" style="background-image: url('{{ activity.largeImageURL }}')">
+            <!-- {{ activity }} -->
+            <div class="meta">{{ activity.title }}</div>
+        </div>
     {% endfor %}
 </div>
 {% endblock %}
