@@ -8,3 +8,5 @@ urlpatterns = [
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+
+admin.autodiscover()
