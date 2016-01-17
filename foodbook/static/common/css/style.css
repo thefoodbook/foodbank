@@ -3,10 +3,16 @@ body {
 }
 
 #container {
+    padding: 0;
+    margin: 0;
 }
 
-#container > nav {
+#container .navbar-header {
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: #FF560A;
+    height: 50px;
+    border-bottom: 0 solid transparent;
 }
 
 #container .search {
@@ -54,6 +60,10 @@ body {
 #container .navbar-default .navbar-brand:hover,
 #container .navbar-default .navbar-brand:active {
     color: white;
+}
+
+#navbar {
+    background-color: white;
 }
 
 #container .search input:placeholder-shown {
