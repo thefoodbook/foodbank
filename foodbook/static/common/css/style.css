@@ -16,20 +16,19 @@ body {
     border-bottom: 0 solid transparent;
 }
 
-#container .search {
-    height: 70px;
+#container .searchbox {
+    height: 50px;
     padding: 10px;
     background-color: lightgray;
     display: block;
     position: relative;
 }
 
-#container .search input {
+#container .searchbox input {
     -webkit-appearance: none;
     appearance: none;
     border: 0 solid transparent;
     border-radius: 5px;
-    height: 30px;
     width: 97%;
     height:100%;
     margin-left: 6px;
@@ -37,7 +36,7 @@ body {
     text-align: left;
 }
 
-#container .search > span {
+#container .searchbox > span {
     position: absolute;
     color: lightgray;
     background-color: transparent;
@@ -68,9 +67,13 @@ body {
     background-color: white;
 }
 
-#container .search input:placeholder-shown {
+#container .searchbox input:placeholder-shown {
     text-align: center;
     text-indent: 0px;
+}
+
+#container .searchbox .ui-input-clear {
+    display: none;
 }
 
 .navbar-default .navbar-brand,

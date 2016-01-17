@@ -1,52 +1,105 @@
-div.main-content{
-	display:block;
-	width:100%;
-	height:70%;
 
-	margin-left:auto;
-	margin-right:auto
-}
-
-div.top-subcontent{
-	background:#2E2B2B;
+#swipe_container {
+	width: 100%;
+	margin: auto !important;
 	display: block;
-	width:100%;
-	height:120px;
+	height: 80%;
+	position: relative;
+	list-style-type: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-div.bottom-subcontent{
-	border-style: solid;
-	border-width: 3px;
-	border-color:red;
+#swipe_container {
+	padding: 0;
+	margin: 0;
+	border: 0px solid transparent;
+}
 
-	-webkit-filter: blur(2px); 
-	opacity: 0.8;
-	background:grey;
+#swipe_container .buddy {
+	padding: 0;
+	margin: 0;
+	border: 0 solid transparent;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#swipe_container .buddy div.avatar {
+	padding: 0;
+	margin: 0;
+	border: 0 solid transparent;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.buddy {
+	display: none;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	color: #fff;
+	padding: 20px;
+	width: 360px;
+	height: 360px;
+	top: 50px;
+	left: 50px;
+	position: absolute;
+	cursor: hand;
+}
+.rotate-left {
+	transform: rotate(30deg) scale(0.8);
+	transition: 1s;
+	margin-left: 400px;
+	cursor: e-resize;
+	opacity: 0;
+}
+.rotate-right {
+	transform: rotate(-30deg) scale(0.8);
+	transition: 1s;
+	opacity: 0;
+	margin-left: -400px;
+	cursor: w-resize;
+}
+.avatar {
+	background: #222;
+	width: 340px;
+	height: 340px;
 	display: block;
-	position: fixed;
-	top:73%;
-	width:100%;
-	height:160px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-size: 100% auto !important;
+	background-position: center;
+	background-repeat: no-repeat;
 }
-
-div.images{
-	width:100%;
-	height:100%;
-	margin:auto;
-	/*background-size: auto;*/
-	background-repeat:no-repeat;
-	background-position: 50% 20%;
-	background-size: cover;
+.like {
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: 2px solid green;
+	color: green;
+	text-transform: uppercase;
+	font-size: 15px;
+	position: absolute;
+	top: 50px;
+	right: 40px;
+	text-shadow: none;
 }
-
-.search .fa-search { 
-  position: absolute;
-  top: 24px;
-  left: 7px;
-  font-size: 15px;
-}
-
-#content{
-	width:100%;
-	height:60%;
+.dislike {
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: 2px solid red;
+	color: red;
+	text-transform: uppercase;
+	font-size: 15px;
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	text-shadow: none;
 }
