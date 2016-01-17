@@ -20,12 +20,9 @@
 <body>
 <div id="container">
   {% include 'foodbook/header.html' %}
-  <div class="searchbox">
-    <span class="fa fa-search"></span>
-    <input type="search" placeholder="Search"/>
-  </div>
 
   {% block content %}{% endblock %}
+
   {% include 'foodbook/footer.html' %}
 </div>
 </body>

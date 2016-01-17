@@ -1,3 +1,17 @@
+{% extends 'foodbook/base.html' %}
+{% load staticfiles %}
+
+{% block pageCSS%}
+<link rel="stylesheet" type="text/css" href="{% static 'foodbook/css/style.css' %}">
+{% endblock %}
+
+{% block pageJS %}
+<!-- Include js plugin -->
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<script src="{% static 'foodbook/js/index_temp.js' %}"></script>
+{% endblock %}
+
+{% block content %}
 <div class="row">
     {% for activity in nearby.activities %}
     {{ activity }}
@@ -7,3 +21,4 @@
     <br />
     {% endfor %}
 </div>
+{% endblock %}
