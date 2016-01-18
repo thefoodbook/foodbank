@@ -12,12 +12,12 @@ $(document).ready(function(){
   
   function right() {
     counter++;
-      if(counter == 3 || counter ==5 ||counter ==8){ 
+      if(counter == 3 || counter ==5 ||counter ==8){
         return left.apply(this);
       }
 
-      $('.buddy').addClass('rotate-left').delay(700).fadeOut(1);
-      $('.buddy').find('.status').remove();
+      $(this).addClass('rotate-left').delay(700).fadeOut(1);
+      $(this).find('.status').remove();
       console.log(this);
       $(this).append('<div class="status like">Like!</div>');      
       if ( $(this).is(':last-child') ) {
@@ -28,8 +28,8 @@ $(document).ready(function(){
   }
   
   function left() {
-    $('.buddy').addClass('rotate-right').delay(700).fadeOut(1);
-    $('.buddy').find('.status').remove();
+    $(this).addClass('rotate-right').delay(700).fadeOut(1);
+    $(this).find('.status').remove();
     $(this).append('<div class="status dislike">Dislike!</div>');
 
     if ( $(this).is(':last-child') ) {
